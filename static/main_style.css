@@ -59,7 +59,7 @@ nav ul li {
 nav ul li a {
     color: rgb(198, 191, 191);
     text-decoration: none;
-    font-size: 18px;
+    font-size: 18px auto;
     position: relative;
 }
 nav ul li a:hover{
@@ -92,6 +92,14 @@ nav ul li a:hover::after {
 
 /* ------------------------------------------------------------- */
 
+.textm h1 {
+    /* DATABASE FOR NORMAL HUMANS */
+    color: #eaff9c;
+    font-size: 5vh auto;
+    margin-bottom: 0;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 25px rgb(255, 0, 174);
+}
 .textm {
     /* SQL MANAGEMENT SYSTEM */
     margin-top: 4vh;
@@ -100,18 +108,10 @@ nav ul li a:hover::after {
     text-shadow: 1px 1px 25px rgb(0, 213, 255);
 }
 
-.textm h1 {
-    /* DATABASE FOR NORMAL HUMANS */
-    color: #eaff9c;
-    font-size: 5vh;
-    margin-bottom: 0;
-    letter-spacing: 2px;
-    text-shadow: 1px 1px 25px rgb(255, 0, 174);
-}
 
 .textm h3 {
     margin-top: 8vh;
-    font-size: 4vh;
+    font-size: 4vh auto;
 }
 
 /* ------------------------------------------------------------- */
@@ -139,7 +139,7 @@ nav ul li a:hover::after {
     margin: 20px;
     margin-bottom: 40px;
     padding: 6vh;
-    font-size: 3vh;
+    font-size: 3vh ;
     border-radius: 10px;
     background-color: rgb(119, 119, 119);
     background-image: linear-gradient(to right, rgba(255, 0, 0, 0.761), rgba(0, 255, 166, 0.827));
@@ -252,7 +252,7 @@ nav ul li a:hover::after {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 5vw;
+    font-size: 5vw auto;
     font-family: Comic Sans MS;
 }
 
