@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='main_style.css') }}">
+    <title>DATABASE FOR NORMAL HUMANS</title>
+</head>
+
+<body>
+    <div class="main_page">
+
+        {% include "header.html" %}
+
+        <div class="btn" id="base">
+            <a href="{{ url_for('add_student') }}"><button>ADD NEW STUDENT</button></a>
+            <a href="{{ url_for('search_student') }}"><button>SEARCH STUDENT</button></a>
+            <a href="{{ url_for('update_student') }}"><button>UPDATE STUDENT</button></a>
+            <a href="{{ url_for('delete_student') }}"><button>DELETE STUDENT</button></a>
+            
+        </div>
+        <div class="content">
+            {% block content %}{% endblock %}
+        </div>
+
+        {% include "contact.html" %}
+
+    </div>
+</body>
+
+</html>
