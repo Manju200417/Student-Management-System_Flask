@@ -58,28 +58,35 @@ def add_student():
 def search_student():
     students = []
     msg = ''
-    
+
     if request.method == 'POST':
-        search_by = request.form["choice"]
-        search_value = request.form["value"]
-        
-        if search_by and search_value:
+        if 'search' in request.form:
+            search_by = request.form["choice"]
+            search_value = request.form["value"]
+
+            if search_by and search_value:
+                try:
+                    if search_by == "id" or search_by == "age":
+                        search_value = int(search_value)
+
+                    query = f"SELECT * FROM student WHERE {search_by} = ?;"
+                    students = db.execute(query, (search_value,)).fetchall()
+
+                    if not students:
+                        msg = "No student found!"
+                except Exception as e:
+                    msg = f"Error: {e}"
+            else:
+                msg = "Please fill input field."
+
+        elif 'show_all' in request.form:
             try:
-                if search_by == "id":
-                    search_value = int(search_value)
-
-                query = f'select * from student where {search_by} = ?;'
-                students = db.execute(query, (search_value,)).fetchall()
-
-                if not students:
-                    msg = "No student found!"
-
+                students = db.execute("SELECT * FROM student").fetchall()
             except Exception as e:
                 msg = f"Error: {e}"
-        else:
-            msg = "Please fill in both fields." 
-                
+
     return render_template("search_student.html", students=students, msg=msg)
+
 
 # ------------------------------update_student---------------------------------
 
