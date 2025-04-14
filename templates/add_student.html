@@ -17,12 +17,12 @@
     <h3 class="which_page">ADD Student</h3>
 
     <div class="add_form">
-        <form method="POST">
-            <input class="input_box" type="number" name="id" placeholder="Enter ID" required>
-            <input class="input_box" type="text" name="name" placeholder="Enter Name" required>
-            <input class="input_box" type="number" name="age" placeholder="Age" required>
-            <input class="input_box" type="text" name="course" placeholder="Course" required>
-
+            <form method="POST">
+            <input class="input_box" type="number" name="id" placeholder="Enter ID" inputmode="numeric" pattern="\d+" required>
+            <input class="input_box" type="text" name="name" placeholder="Enter Name" pattern="[A-Za-z]+[0-9]+[A-Za-z]*" title="Must start with letters" required>
+            <input class="input_box" type="number" name="age" placeholder="Age" inputmode="numeric" min="1" max="100" required>
+            <input class="input_box" type="text" name="course" placeholder="Course" pattern="[A-Za-z\s]+[0-9]*" title="Course name must start with letters; numbers are optional" required>
+                
             <button class="submit_button" type="submit">ADD</button>
         </form>
     </div>
