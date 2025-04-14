@@ -44,7 +44,7 @@ def add_student():
                 
                 msg = "Student added successfully!"
 
-                print(f'For Admin :=> id = {student_id}, name = {name}, age = {age}, course ={course} \n Masage = {msg}')
+                app.logger.info(f'For Admin :=> id = {student_id}, name = {name}, age = {age}, course ={course} \n Message = {msg}')
                 
         except sqlite3.IntegrityError:
             msg = "Student with this ID already exists."
