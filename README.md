@@ -15,6 +15,15 @@ A web-based **Student Management System** built using **Flask** and **SQLite**. 
 
 ---
 
+##
+**📌 Use Cases**
+
+- College mini projects    
+- Beginner Flask practice    
+- CRUD app demonstration    
+- Student record maintenance for small institutions    
+
+
 ## 💻 Technologies Used
 
 - **Python 3**
@@ -63,6 +72,13 @@ Now open your browser and navigate to:
 
     http://localhost:5000
 
+
+---
+
+### 🌐 Live Demo  
+👉 [student-management-system-flask.onrender.com](https://student-management-system-flask.onrender.com/)
+
+---
     
 🌱 Future Enhancements  
 🔐 Add user authentication (Login/Register)  
