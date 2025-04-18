@@ -21,7 +21,7 @@
                  
             <input class="input_box" type="number" name="id" placeholder="Enter ID" inputmode="numeric" pattern="\d+" required>
         
-            <input class="input_box" type="text" name="name" placeholder="Enter Name" pattern="^[A-Za-z][A-Za-z0-9]*$" title="Name must start with letters, numbers are optional" required>
+            <input class="input_box" type="text" name="name" placeholder="Enter Name" pattern="^[A-Za-z][A-Za-z0-9 .'-]*$" title="Name must start with a letter. Allowed: letters, numbers, spaces, dots, hyphens, apostrophes." required>
         
             <input class="input_box" type="number" name="age" placeholder="Age" inputmode="numeric" min="1" max="100" required>
         
