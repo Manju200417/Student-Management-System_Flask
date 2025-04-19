@@ -8,18 +8,13 @@ body {
     margin: 0;
     background-color: rgb(0, 0, 0);
     color: white;
+    animation: come_into_page 2s ease forwards;
     
 }
 
 body {
   opacity: 0;
   animation: pageFade 1.5s ease forwards;
-}
-
-@keyframes pageFade {
-  to {
-    opacity: 1;
-  }
 }
 
 /* ------------------------------------------------------------- */
@@ -40,7 +35,7 @@ nav {
 nav h3 {
     text-shadow: 1px 1px 25px rgb(255, 255, 255);
     color: rgb(0, 225, 255);
-    font-size: 5vh;
+    font-size: 5vh auto;
     font-family: Comic Sans MS;
     
 }
@@ -123,6 +118,7 @@ nav ul li a:hover::after {
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
+    animation: come_into_page 1s ease-in forwards;
 }
 
 .btn button a {
@@ -162,6 +158,28 @@ nav ul li a:hover::after {
     transform: translateY(10px);
 }
 
+
+/* ---------------------------- Animation --------------------------- */
+@keyframes pageFade {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes come_into_page{
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+      
+  }
+
+/* ----------------------------end Animation --------------------------- */
+
 /*______________________Contact____________________________*/
 
 #contact {
@@ -170,18 +188,19 @@ nav ul li a:hover::after {
     height: 50vh;
     font-family: Comic Sans MS;
 }
-
 #contact h3 {
     text-shadow: 1px 1px 25px rgb(0, 208, 255);
     font-size: 5vh;
     margin-bottom: 10vh;
+    animation: come_into_page 2s ease-out forwards;
 }
 
 .links {
     display: flex;
-    justify-content: center;
+    justify-content: center; 
     align-items: center;
     gap: 20px;
+    animation: come_into_page 2s ease forwards;
 }
 
 .link_container {
@@ -237,6 +256,7 @@ nav ul li a:hover::after {
     box-shadow: 0.2vh 0.2vh 2.5vh 0.6vh rgba(0, 255, 234, 0.816);
     transition: 0.3s;
     font-family: Comic Sans MS;
+    animation: come_into_page 2s ease forwards;
 }
 
 .input_box:hover {
@@ -254,6 +274,7 @@ nav ul li a:hover::after {
     align-items: center;
     font-size: 5vw auto;
     font-family: Comic Sans MS;
+    animation: come_into_page 2s;
 }
 
 /* --------------------submit_button-------------- */
@@ -275,6 +296,7 @@ nav ul li a:hover::after {
     font-weight: 800;
     transition: 0.3s;
     font-family: Comic Sans MS;
+    animation: come_into_page 2s ease forwards;
 }
 
 .submit_button:hover {
@@ -301,6 +323,7 @@ label {
     text-align: center;
     display: inline-block;
     font-family: Comic Sans MS;
+    animation: come_into_page 2s ease forwards;
 }
 
 /* -------------------------------selection--------------------------------- */
@@ -310,6 +333,7 @@ label {
     align-items: center;
     justify-content: center;
     font-family: Comic Sans MS;
+    animation: come_into_page 2s ease forwards;
 }
 
 /* ------------------------------page_title---------------------------------- */
@@ -323,6 +347,7 @@ label {
     margin-bottom: 20px;
     font-family: Comic Sans MS;
     text-shadow: 1px 1px 25px rgb(255, 0, 0);
+    animation: come_into_page 2s;
     
 
 }
@@ -347,6 +372,7 @@ select {
     transition: 1s;
     box-shadow: 0.2vh 0.2vh 0.6vh rgb(255, 106, 128);
     font-family: Comic Sans MS;
+    animation: come_into_page 2s ease forwards;
 }
 
 select option {
@@ -374,11 +400,11 @@ table {
     box-shadow: 1px 1px 20px rgb(73, 190, 77);
     border-radius: 5px;
     text-align: center;
+    animation: come_into_page 2s ease forwards;
 }
 
 tr {
     border: 7px solid rgb(0, 255, 157);
-
 }
 
 #heading {
