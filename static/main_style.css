@@ -183,62 +183,24 @@ nav ul li a:hover::after {
 /*______________________Contact____________________________*/
 
 #contact {
+    padding: 40px 20px;
     text-align: center;
-    margin-top: 4vh;
-    height: 50vh;
-    font-family: Comic Sans MS;
-}
-#contact h3 {
-    text-shadow: 1px 1px 25px rgb(0, 208, 255);
-    font-size: 5vh;
-    margin-bottom: 10vh;
-    animation: come_into_page 2s ease-out forwards;
+    animation: come_into_page 1s ease-out forwards;
 }
 
-.links {
+.social-media-icons {
     display: flex;
-    justify-content: center; 
-    align-items: center;
-    gap: 20px;
-    animation: come_into_page 2s ease forwards;
+    justify-content: center;
+    margin-top: 10px;
 }
 
-.link_container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
 
-.links a {
-    text-decoration: none;
-    color: rgb(191, 191, 191);
-    font-size: 18px;
-    font-family: Comic Sans MS;
-    transition: 0.2s;
-    text-shadow: 1px 1px 25px red;
-}
-
-.links a:hover {
-    color: rgb(0, 255, 34);
-    text-shadow: 1px 1px 25px rgb(0, 255, 55);
-}
-
-.link_icons {
+.social-media-icons img {
+    width: 25px;
     filter: invert(1);
-    height: 40px;
-    width: 40px;
-    object-fit: contain;
-    transition: 0.4s;
+    margin: 10px 10px;
+    animation: come_into_page 1s cubic-bezier(0.4, -0.29, 0, 0.98) forwards;
 }
-
-.link_icons:hover {
-    transform: scale(1.1, 1.1);
-    box-shadow: 1px 1px 20px rgb(0, 255, 42);
-    border-radius: 50%;
-}
-
-
-
 /* ---------------------------input_box------------------- */
 .input_box {
     display: block;
