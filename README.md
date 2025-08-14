@@ -1,10 +1,10 @@
-# 🎓 Flask Student Management System
+#  Flask Student Management System
 
 A web-based **Student Management System** built using **Flask** and **SQLite**. This application provides basic functionality to **Add**, **Search**, **Update**, and **Delete** student records through a clean and responsive HTML interface.
 
 ---
 
-## 🚀 Features
+##  Features
 
 -  Add new student with **ID, Name, Age, and Course**
 -  Search for students by **ID, Name, Age, or Course**
@@ -15,8 +15,7 @@ A web-based **Student Management System** built using **Flask** and **SQLite**. 
 
 ---
 
-##
-**📌 Use Cases**
+ ##  Use Cases
 
 - College mini projects    
 - Beginner Flask practice    
@@ -24,7 +23,7 @@ A web-based **Student Management System** built using **Flask** and **SQLite**. 
 - Student record maintenance for small institutions    
 
 
-## 💻 Technologies Used
+##  Technologies Used
 
 - **Python 3**
 - **Flask** Web Framework
@@ -33,7 +32,7 @@ A web-based **Student Management System** built using **Flask** and **SQLite**. 
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 Student-Management-System/  
 │ ├── app.py # Main Flask application  
@@ -48,24 +47,24 @@ Student-Management-System/
 └── style.css # Main CSS styling for the app  
 ##
 
-## ⚙️ Setup Instructions
+##  Setup Instructions
 
-### 🔽 Clone the Repository
+###  Clone the Repository
 
     git clone https://github.com/YOUR_USERNAME/flask-student-management-system.git
     cd flask-student-management-system
 
 
-🧪 Create Virtual Environment (optional but recommended)
+ Create Virtual Environment (optional but recommended)
 
     python -m venv venv
     source venv/bin/activate      # Linux/macOS
     venv\Scripts\activate         # Windows
     
-🔧 Install Dependencies
+ Install Dependencies
 
     pip install flask
-▶️ Run the Application
+ Run the Application
 
     python app.py
 Now open your browser and navigate to:
@@ -75,20 +74,20 @@ Now open your browser and navigate to:
 
 ---
 
-### 🌐 Live Demo  
-👉 [student-management-system-flask.onrender.com](https://student-management-system-flask.onrender.com/)
+###  Live Demo  
+ [DEMO](https://student-management-system-flask.onrender.com/)
 
 ---
     
-🌱 Future Enhancements  
-🔐 Add user authentication (Login/Register)  
-🖼️ Add student image upload  
-📊 Add pagination, search filters & better sorting  
-📤 Export student data as Excel/PDF  
-💄 Improve UI using Bootstrap or TailwindCSS  
+ **Future Enhancements** 
+ Add user authentication (Login/Register)  
+ Add student image upload  
+ Add pagination, search filters & better sorting  
+ Export student data as Excel/PDF  
+ Improve UI using Bootstrap or TailwindCSS  
 
 ##
 
-🙌 Author  
+ Author  
 Made with ❤️ by Manju  
-📬 Contact: manjuguru814@gmail.com
+ Contact: manjuguru814@gmail.com
